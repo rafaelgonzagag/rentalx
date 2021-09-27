@@ -1,0 +1,17 @@
+docker ps #lista todos os container ativos
+docker ps -a #lista todos os container
+docker stop #para a execucao do container
+docker rm ID #remover um container, mais precisa está parado
+docker start ID #iniciar um container
+docker exec -it ID/NAME /bin/bash #acessar um container
+docker logs NAME #ver o log da aplicacao
+docker logs -f #monitorar o log da aplicacao 
+
+
+docker-compose up -d #pra subir nosso containers
+docker-compose stop #pra partar nosso containers
+docker-compose down #pra remover nossos containers
+docker-start #iniciar nossos containers
+
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' rentx
+docker exec rentx cat /etc/hosts
